@@ -1,0 +1,66 @@
+<!--CREADO POR: JUAN CAMILO FRANCO GONZALEZ MISIONTIC 2022-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reto 2</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+  </head>
+  <body>
+    <!-- /.creacion del apartado de las fincas******************************-->
+    <h1>!!CREACIÓN DE FINCAS !!</h1>
+
+    <div>
+      <input type="number" id="idfinca" placeholder="ID" />
+      <input type="text" id="addressfinca" placeholder="ADDRESS" />
+      <input type="number" id="exensionfinca" placeholder="EXENSION" />
+      <input type="number" id="categoryfinca" placeholder="CATEGORY ID" />
+      <input type="text" id="namefinca" placeholder="NAME" />
+    </div>
+
+    <button onclick="guardarInformacionfinca()">Guardar!</button>
+    <button onclick="editarInformacionfinca()">Actualizar!</button>
+
+    <div id="resultadofinca"></div>
+    <button onclick="traerInformacionfinca()">Consultar</button>
+
+    <!-- /.Parte de creador de registros para los clientes************************ -->
+    <h1>!!REGISTRO DE CLIENTES!!</h1>
+
+    <div>
+      <input type="number" id="id" placeholder="ID" />
+      <input type="text" id="name" placeholder="NAME" />
+      <input type="text" id="email" placeholder="EMAIL" />
+      <input type="number" id="age" placeholder="AGE" />
+    </div>
+
+    <button onclick="guardarInformacioncliente()">Guardar!</button>
+    <button onclick="editarInformacioncliente()">Actualizar!</button>
+
+    <div id="resultadocliente"></div>
+    <button onclick="traerInformacioncliente()">Consultar</button>
+
+    <!-- /.Parte del creador de mensajes********************************* -->
+    <h1>!!REGISTRO DE MENSAJES!!</h1>
+
+    <div>
+      <input type="number" id="idmensaje" placeholder="ID" />
+      <input type="text" id="messagetext" placeholder="MESSAGETEXT" />
+    </div>
+
+    <button onclick="guardarInformacionmensaje()">Guardar!</button>
+    <button onclick="editarInformacionmensaje()">Actualizar!</button>
+
+    <div id="resultadomensaje"></div>
+    <button onclick="traerInformacionmensaje()">Consultar</button>
+  </body>
+</html>
+<!--CREADO POR: JUAN CAMILO FRANCO GONZALEZ MISIONTIC 2022-->
